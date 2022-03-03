@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>스타벅스 반응형 홈페이지</title>
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="img/starbucks_logo.PNG" type="img/starbucks_favicon">
+    <!-- swiper css cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <!-- 어썸 아이콘 삽입 cdn -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- 외부css연결 -->
+    <link rel="stylesheet" href="css/starbucks.css" type="text/css">
+    <!-- 제이쿼리 라이브러리 연결 -->
+    <script src="js/jquery-3.6.0.js"></script>
+    <!-- swiper js cdn -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- 외부 js 연결 -->
+    <script src="js/js.js"></script>
+    
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="header_wrap">
+                <div class="logo">
+                    <a href="imnex.html">
+                        <img src="img/starbucks_logo.PNG" alt="로고">
+                    </a>
+                </div>
+                <nav> <!-- pc버전 네비게이션 -->
+                    <ul>
+                        <li><a href="#">COFFEE</a>
+                            <ul class="sub">
+                                <li><a href="#">커피</a></li>
+                                <li><a href="#">나와 어울리는 커피</a></li>
+                                <li><a href="#">스타벅스 리저브™</a></li>
+                                <li><a href="#">에스프레소 음료</a></li>
+                                <li><a href="#">최상의 커피를 즐기는 법</a></li>
+                                <li><a href="#">커피 이야기</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">MENU</a>
+                            <ul class="sub">
+                                <li><a href="#">푸드</a></li>
+                                <li><a href="#">상품</a></li>
+                                <li><a href="#">카드</a></li>
+                                <li><a href="#">메뉴 이야기</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">STORE</a>
+                            <ul class="sub">
+                                <li><a href="#">매장 찾기</a></li>
+                                <li><a href="#">드라이브 스루 매장</a></li>
+                                <li><a href="#">스타벅스 리저브™ 매장</a></li>
+                                <li><a href="#">커뮤니티 스토어 매장</a></li>
+                                <li><a href="#">매장 이야기</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">RESPONSIBILITY</a>
+                            <ul class="sub">
+                                <li><a href="#">사회공헌 캠페인 소개</a></li>
+                                <li><a href="#">지역 사회 참여 활동</a></li>
+                                <li><a href="#">환경 보호 활동</a></li>
+                                <li><a href="#">윤리 구매</a></li>
+                                <li><a href="#">글로벌 사회 공헌</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">STARBUCKS REWARDS</a>
+                            <ul class="sub">
+                                <li><a href="#">스타벅스 리워드</a></li>
+                                <li><a href="#">스타벅스 카드</a></li>
+                                <li><a href="#">스타벅스 e-Gift Card</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">WHAT'S NEW</a>
+                            <ul class="sub">
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">뉴스</a></li>
+                                <li><a href="#">매장별 이벤트</a></li>
+                                <li><a href="#">e-프리퀀시</a></li>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">윌페이퍼</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div id="navi"><!-- 태블릿, 모바일 버전 네비게이션 -->
+                    <!-- 화살표를 클릭하면 nav가 들어감 -->
+                    <div class="navi_arrow">
+                        <a href="#"><i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <nav> 
+                        <ul>
+                            <li><a href="#">COFFEE</a>
+                                <ul class="sub">
+                                    <li><a href="#">커피</a></li>
+                                    <li><a href="#">나와 어울리는 커피</a></li>
+                                    <li><a href="#">스타벅스 리저브™</a></li>
+                                    <li><a href="#">에스프레소 음료</a></li>
+                                    <li><a href="#">최상의 커피를 즐기는 법</a></li>
+                                    <li><a href="#">커피 이야기</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">MENU</a>
+                                <ul class="sub">
+                                    <li><a href="#">푸드</a></li>
+                                    <li><a href="#">상품</a></li>
+                                    <li><a href="#">카드</a></li>
+                                    <li><a href="#">메뉴 이야기</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">STORE</a>
+                                <ul class="sub">
+                                    <li><a href="#">매장 찾기</a></li>
+                                    <li><a href="#">드라이브 스루 매장</a></li>
+                                    <li><a href="#">스타벅스 리저브™ 매장</a></li>
+                                    <li><a href="#">커뮤니티 스토어 매장</a></li>
+                                    <li><a href="#">매장 이야기</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">RESPONSIBILITY</a>
+                                <ul class="sub">
+                                    <li><a href="#">사회공헌 캠페인 소개</a></li>
+                                    <li><a href="#">지역 사회 참여 활동</a></li>
+                                    <li><a href="#">환경 보호 활동</a></li>
+                                    <li><a href="#">윤리 구매</a></li>
+                                    <li><a href="#">글로벌 사회 공헌</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">STARBUCKS REWARDS</a>
+                                <ul class="sub">
+                                    <li><a href="#">스타벅스 리워드</a></li>
+                                    <li><a href="#">스타벅스 카드</a></li>
+                                    <li><a href="#">스타벅스 e-Gift Card</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">WHAT'S NEW</a>
+                                <ul class="sub">
+                                    <li><a href="#">이벤트</a></li>
+                                    <li><a href="#">뉴스</a></li>
+                                    <li><a href="#">매장별 이벤트</a></li>
+                                    <li><a href="#">e-프리퀀시</a></li>
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="#">윌페이퍼</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="sns">
+                    <ul>
+                        <li><a href="#">
+                            <img src="img/facebook.png" alt="페이스북">
+                        </a></li>
+                        <li><a href="#">
+                            <img src="img/insta.png" alt="인스타그램">
+                        </a></li>
+                        <li><a href="#">
+                            <img src="img/youtube.png" alt="유튜브">
+                        </a></li>
+                    </ul>
+                </div>
+                <!-- 서브메뉴 배경 -->
+                <div class="sub_bg"></div>
+                <!-- 메뉴 햄버거 버튼 -->
+                <div class="menu_btn">
+                    <a href="#"><img src="img/ham.png" alt="햄버거 메뉴"></a>
+                </div>
+            </div>
+        </header>
+        <section class="s1">
+            <div class="visual">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide v1"></div>
+                        <div class="swiper-slide v2"></div>
+                        <div class="swiper-slide v3"></div>
+                    </div>
+                    <!-- 슬라이드의 동그라미 버튼(페이지네이션) -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <!-- 비주얼 글씨 -->
+            <div class="visual_txt">
+                <h1>PICK YOUR STARBUCKS</h1>
+                <p>스타벅스에서 이국적이고 다양한 음료를 만나보세요</p>
+                <small>스타벅스만의 특별함을 경험할 수 있는 <span>최상의 선택 음료</span>
+                    <br>스타벅스 커피와 완벽한 어울림을 <span>자랑하는 푸드</span>
+                    <br>다양한 시도와 디자인으로 <span>가치를 더하는 상품</span>
+                    <br>소중한 사람에게 마음을 전하는 가장 좋은 방법  <span>스타벅스 카드</span>
+                </small>
+                <a href="#">자세히 보기</a>
+            </div>
+        </section>
+        <section class="s2">
+            <div class="product_title">
+                <h1>스타벅스는 항상 여러분과 함께합니다.</h1>
+                <p>스타벅스에서 나만의 음료,<br> MD, e-GIFT CARD를 만나실 수 있습니다.</p>
+            </div>
+            <div class="product">
+                <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide p1">
+                            <a href="#">COFFEE</a>
+                        </div>
+                        <div class="swiper-slide p2">
+                            <a href="#">FOOD</a>
+                        </div>
+                        <div class="swiper-slide p3">
+                            <a href="#">MD</a>
+                        </div>
+                        <div class="swiper-slide p4">
+                            <a href="#">ACC</a>
+                        </div>
+                        <div class="swiper-slide p5">
+                            <a href="#">GIFT CARD</a>
+                        </div>
+                        <div class="swiper-slide p6">
+                            <a href="#">MENU STORY</a>
+                        </div>
+                    </div><!--swiper-wrpper-->
+                    <!-- 왼쪽 오른쪽 화살표 -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- 동그라미 버튼 -->
+                    <div class="swiper-pagination"></div>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="s3">
+            <div class="center">
+                <h1>스타벅스의 <br>다양한 소식을 만나보세요</h1>
+                <p>스타벅스는 모든 일에 있어서 고객과의 관계를 존중할 수 있도록 노력합니다</p>
+                <div class="new">
+                    <div class="new_list">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="new_img">
+                                        <div class="new_img2 n1">
+                                            <!-- css background img 작아지고 커질 애 -->
+                                        </div>
+                                        <div class="new_txt">
+                                            <h3>스타벅스 HOLIDAY 신메뉴</h3>
+                                            <span>2021.12.</span>
+                                            <p>스타벅스만의 특별한 HOLIDAY 한정 메뉴 7종 만나보실 수 있습니다.</p>
+                                        </div>
+                                    </div>
+                                    <!-- css backgrioud img 움직이지 않는애-->
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="new_img">
+                                        <div class="new_img2 n2">
+                                            <!-- css background img 작아지고 커질 애 -->
+                                        </div>
+                                        <div class="new_txt">
+                                            <h3>세계의 스타벅스</h3>
+                                            <span>2021.11.</span>
+                                            <p>오늘날 스타벅스는세계 최고의 커피 전문 회사로서
+                                                매주 수백만 명의 고객들에게 최고의 커피와 특별한 경험을
+                                                전달하고 있습니다.</p>
+                                        </div>
+                                    </div>
+                                    <!-- css backgrioud img 움직이지 않는애-->
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="new_img">
+                                        <div class="new_img2 n3">
+                                            <!-- css background img 작아지고 커질 애 -->
+                                        </div>
+                                        <div class="new_txt">
+                                            <h3>스타벅스 보도자료</h3>
+                                            <span>2021.11.</span>
+                                            <p>스타벅스커피 코리아의 다양하고 새로운 소식을 보도자료를 통해
+                                                확인할 수 있습니다.</p>
+                                        </div>
+                                    </div>
+                                    <!-- css backgrioud img 움직이지 않는애-->
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="new_btn">
+                        <a href="#">스타벅스 소식 더보기</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s4">
+            <div class="center">
+                <div class="online">
+                    <div class="banner">
+                        <h3>스타벅스 매장찾기</h3>
+                        <p>전국 스타벅스 매장 이용 및 위치 안내입니다.</p>
+                        <div class="banner_btn">
+                            <a href="#">매장찾기</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="banner">
+                        <h3>문의 사항 & 고객센터</h3>
+                        <p>궁금하신 점과 문의 사항 있으시면 친절하게 답변드리겠습니다.</p>
+                        <div class="banner_btn">
+                            <a href="#">문의하기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="center">
+                <div class="footer_left">
+                    <div class="footer_logo">
+                        <img src="img/starbucks_text_logo.PNG" alt="로고">
+                    </div>
+                    <address>
+                        사업자등록번호 : 201-81-21515 (주)스타벅스커피 코리아 
+                        <br>대표이사 : 송 데이비드 호섭 TEL : 1522-3232 개인정보 책임자 : 하익성
+                    </address>
+                    <p>ⓒ 2021 Starbucks Coffee Company. All Rights Reserved.</p>
+                </div>
+                
+                <div class="footer_right">
+                    <a href="#">신규 입점 제의</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <i class="fas fa-arrow-up"></i>
+</body>
+</html>
